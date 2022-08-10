@@ -37,9 +37,7 @@ func (x Uint256) Add(y Uint256) Uint256 {
 	z.u0, c = bits.Add64(x.u0, y.u0, c)
 	z.u1, c = bits.Add64(x.u1, y.u1, c)
 	z.u2, c = bits.Add64(x.u2, y.u2, c)
-	z.u3, c = bits.Add64(x.u3, y.u3, c)
-	_ = c
-	// println("c", c)
+	z.u3, _ = bits.Add64(x.u3, y.u3, c)
 	return z
 }
 
