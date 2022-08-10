@@ -1,4 +1,4 @@
-module github.com/elagergren/ctb
+module github.com/ericlagergren/ctb
 
 go 1.16
 
